@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:profile/common/gradient_appbar.dart';
 import 'package:profile/first/match_cards.dart';
 
 class PurposefulMessagingScreen extends StatefulWidget {
@@ -28,11 +29,15 @@ class _PurposefulMessagingScreenState extends State<PurposefulMessagingScreen> {
     print("the width is ${MediaQuery.of(context).size.width}");
     print("the height is ${MediaQuery.of(context).size.height}");
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.arrow_back),
-        title: Text('Purposeful Messaging'),
+      body: Stack(
+        children: [
+          GradientAppBar('Purposeful Messaging'),
+          Padding(
+            padding: const EdgeInsets.only(top: 100),
+            child: Stack(alignment: Alignment.center, children: cardList),
+          ),
+        ],
       ),
-      body: Stack(alignment: Alignment.center, children: cardList),
     );
   }
 

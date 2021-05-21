@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
       title: 'Mate',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
       ),
       home: PurposefulMessagingScreen(),
     );
