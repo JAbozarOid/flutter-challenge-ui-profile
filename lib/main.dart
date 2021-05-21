@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mate',
+      title: 'SADC',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
       ),

@@ -26,8 +26,6 @@ class _PurposefulMessagingScreenState extends State<PurposefulMessagingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("the width is ${MediaQuery.of(context).size.width}");
-    print("the height is ${MediaQuery.of(context).size.height}");
     return Scaffold(
       body: Stack(
         children: [
