@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile/first/purposeful_messaging_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,14 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: PurposefulMessaging(),
+      home: PurposefulMessagingScreen(),
     );
   }
 }
 
-class PurposefulMessaging extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
+
